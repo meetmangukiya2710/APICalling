@@ -460,7 +460,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         let b = indexPath.row
         
         select.flags = urlToImage(url: array[b].flags.png)
-        select.countries_name = array[b].capital ?? [""]
+//        select.countries_name = array[b].capital ?? [""]
         select.countries_lang = array[b].languages.debugDescription
         select.countries_indepedent = String(array[b].independent!)
         select.countries_border = array[b].borders.debugDescription
