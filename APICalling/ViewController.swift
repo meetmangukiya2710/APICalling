@@ -472,7 +472,6 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         
         self.navigationController?.pushViewController(select, animated: true)
         
-        //dskfghads
     }
     
 }
