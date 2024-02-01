@@ -471,6 +471,8 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         select.countries_discribe = array[b].flags.alt ?? ""
         
         self.navigationController?.pushViewController(select, animated: true)
+        
+        //dskfghads
     }
     
 }
