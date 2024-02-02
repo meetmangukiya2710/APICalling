@@ -460,14 +460,11 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         let b = indexPath.row
         
         select.flags = urlToImage(url: array[b].flags.png)
-//        select.countries_name = array[b].capital ?? [""]
-        select.countries_lang = array[b].languages.debugDescription
+        select.countries_name = array[b].capital ?? [""]
         select.countries_indepedent = String(array[b].independent!)
-        select.countries_border = array[b].borders.debugDescription
         select.countries_area = String(array[b].area)
         select.countries_region = array[b].region.rawValue
         select.countries_population = String(array[b].population)
-        select.countries_timezone = array[b].timezones.debugDescription
         select.countries_discribe = array[b].flags.alt ?? ""
         
         self.navigationController?.pushViewController(select, animated: true)

@@ -34,26 +34,44 @@
                                             <rect key="frame" x="0.0" y="0.0" width="194" height="390"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUc-Cb-IO6">
-                                                    <rect key="frame" x="9" y="224" width="176" height="149"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUc-Cb-IO6">
+                                                    <rect key="frame" x="9" y="228" width="176" height="154"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="176" id="F0K-2c-2m3"/>
+                                                        <constraint firstAttribute="height" constant="154" id="rDN-Ll-PjN"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aKM-xy-a8Z">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aKM-xy-a8Z">
                                                     <rect key="frame" x="8" y="8" width="178" height="120"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="120" id="kK7-7w-wCC"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWR-YP-zta">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWR-YP-zta">
                                                     <rect key="frame" x="9" y="144" width="176" height="62"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="62" id="kcM-Bm-P3A"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" red="0.10980392160000001" green="0.23137254900000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="aKM-xy-a8Z" secondAttribute="trailing" constant="8" id="Dsx-xP-hTC"/>
+                                                <constraint firstAttribute="trailing" secondItem="DWR-YP-zta" secondAttribute="trailing" constant="9" id="FJN-KW-wtb"/>
+                                                <constraint firstAttribute="trailing" secondItem="fUc-Cb-IO6" secondAttribute="trailing" constant="9" id="GfQ-np-KZD"/>
+                                                <constraint firstItem="aKM-xy-a8Z" firstAttribute="top" secondItem="D3p-BD-iXT" secondAttribute="top" constant="8" id="Mxt-eh-cN2"/>
+                                                <constraint firstItem="DWR-YP-zta" firstAttribute="leading" secondItem="D3p-BD-iXT" secondAttribute="leading" constant="9" id="QgE-CY-v2l"/>
+                                                <constraint firstItem="fUc-Cb-IO6" firstAttribute="top" secondItem="DWR-YP-zta" secondAttribute="bottom" constant="22" id="Uud-mP-Rf4"/>
+                                                <constraint firstItem="aKM-xy-a8Z" firstAttribute="leading" secondItem="D3p-BD-iXT" secondAttribute="leading" constant="8" id="ZY0-r5-cjM"/>
+                                                <constraint firstItem="fUc-Cb-IO6" firstAttribute="leading" secondItem="D3p-BD-iXT" secondAttribute="leading" constant="9" id="nnP-cs-xJG"/>
+                                                <constraint firstItem="DWR-YP-zta" firstAttribute="top" secondItem="aKM-xy-a8Z" secondAttribute="bottom" constant="16" id="s76-JH-IEy"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="194" height="390"/>
                                         <connections>
@@ -101,26 +119,17 @@
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W0J-Pr-fsX">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="1159"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="euw-Ya-fXk">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="euw-Ya-fXk">
                                                 <rect key="frame" x="76" y="8" width="240" height="128"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="3Nm-g1-dlo"/>
+                                                </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmf-dg-uWu">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmf-dg-uWu">
                                                 <rect key="frame" x="16" y="168" width="361" height="60"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="Label">
-                                                        <attributes>
-                                                            <font key="NSFont" size="17" name="ArialRoundedMTBold"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTp-KH-YYD">
-                                                <rect key="frame" x="130" y="236" width="247" height="60"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="ulP-6o-uYt"/>
+                                                </constraints>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Label">
                                                         <attributes>
@@ -132,7 +141,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bl-ag-h6g">
-                                                <rect key="frame" x="16" y="797" width="361" height="267"/>
+                                                <rect key="frame" x="16" y="632" width="361" height="182"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Label">
@@ -144,21 +153,8 @@
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBm-6v-jQa">
-                                                <rect key="frame" x="16" y="236" width="106" height="60"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="Language :-">
-                                                        <attributes>
-                                                            <font key="NSFont" size="17" name="ArialRoundedMTBold"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uW2-9f-xlO">
-                                                <rect key="frame" x="16" y="729" width="90" height="60"/>
+                                                <rect key="frame" x="16" y="564" width="90" height="60"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Discribe :-">
@@ -171,7 +167,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAD-3H-Q3K">
-                                                <rect key="frame" x="147" y="313" width="230" height="60"/>
+                                                <rect key="frame" x="143" y="253" width="230" height="60"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Label">
@@ -183,9 +179,11 @@
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Tp-Zp-nUe">
-                                                <rect key="frame" x="16" y="313" width="123" height="60"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Tp-Zp-nUe">
+                                                <rect key="frame" x="15.999999999999993" y="253" width="119.33333333333331" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="Mqu-Hy-XXP"/>
+                                                </constraints>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Independent :-">
                                                         <attributes>
@@ -196,34 +194,8 @@
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAA-Jo-2ca">
-                                                <rect key="frame" x="147" y="381" width="230" height="60"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="Label">
-                                                        <attributes>
-                                                            <font key="NSFont" size="17" name="ArialRoundedMTBold"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZV-XT-3Ag">
-                                                <rect key="frame" x="16" y="381" width="78" height="60"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="Border :-">
-                                                        <attributes>
-                                                            <font key="NSFont" size="17" name="ArialRoundedMTBold"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dc0-5O-FAT">
-                                                <rect key="frame" x="147" y="449" width="230" height="60"/>
+                                                <rect key="frame" x="147" y="319" width="230" height="60"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Label">
@@ -236,7 +208,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xpt-N4-iIC">
-                                                <rect key="frame" x="16" y="449" width="63" height="60"/>
+                                                <rect key="frame" x="16" y="319" width="63" height="60"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Area :-">
@@ -249,7 +221,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sht-fK-HTb">
-                                                <rect key="frame" x="147" y="517" width="230" height="60"/>
+                                                <rect key="frame" x="147" y="387" width="230" height="60"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Label">
@@ -262,7 +234,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCX-xg-30v">
-                                                <rect key="frame" x="16" y="517" width="73" height="60"/>
+                                                <rect key="frame" x="16" y="387" width="73" height="60"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="region :- ">
@@ -275,7 +247,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCK-ce-VHY">
-                                                <rect key="frame" x="147" y="585" width="230" height="60"/>
+                                                <rect key="frame" x="147" y="455" width="230" height="60"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Label">
@@ -288,7 +260,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2w-wD-BL4">
-                                                <rect key="frame" x="16" y="585" width="106" height="60"/>
+                                                <rect key="frame" x="16" y="455" width="106" height="60"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Population :- ">
@@ -300,34 +272,18 @@
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKr-eL-yL6">
-                                                <rect key="frame" x="147" y="653" width="230" height="60"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="Label">
-                                                        <attributes>
-                                                            <font key="NSFont" size="17" name="ArialRoundedMTBold"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slS-fv-OIt">
-                                                <rect key="frame" x="16" y="653" width="102" height="60"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="TimeZone :-">
-                                                        <attributes>
-                                                            <font key="NSFont" size="17" name="ArialRoundedMTBold"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="euw-Ya-fXk" secondAttribute="trailing" constant="77" id="0M5-dS-ogB"/>
+                                            <constraint firstItem="euw-Ya-fXk" firstAttribute="top" secondItem="W0J-Pr-fsX" secondAttribute="top" constant="8" id="7H7-ac-WOV"/>
+                                            <constraint firstItem="bmf-dg-uWu" firstAttribute="top" secondItem="euw-Ya-fXk" secondAttribute="bottom" constant="32" id="CDr-No-1zj"/>
+                                            <constraint firstItem="2Tp-Zp-nUe" firstAttribute="top" secondItem="bmf-dg-uWu" secondAttribute="bottom" constant="25" id="IEr-p8-n8W"/>
+                                            <constraint firstAttribute="trailing" secondItem="bmf-dg-uWu" secondAttribute="trailing" constant="16" id="T7H-TE-mRL"/>
+                                            <constraint firstItem="2Tp-Zp-nUe" firstAttribute="leading" secondItem="W0J-Pr-fsX" secondAttribute="leading" constant="16" id="icl-qA-oh4"/>
+                                            <constraint firstItem="euw-Ya-fXk" firstAttribute="leading" secondItem="W0J-Pr-fsX" secondAttribute="leading" constant="76" id="jgO-kK-ru2"/>
+                                            <constraint firstItem="bmf-dg-uWu" firstAttribute="leading" secondItem="W0J-Pr-fsX" secondAttribute="leading" constant="16" id="mhw-Jo-8Mh"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -351,14 +307,11 @@
                     </view>
                     <connections>
                         <outlet property="countries_Area" destination="dc0-5O-FAT" id="ilq-AN-otG"/>
-                        <outlet property="countries_Border" destination="RAA-Jo-2ca" id="PnI-qa-T7B"/>
-                        <outlet property="countries_Discribe" destination="7bl-ag-h6g" id="sta-3T-qaW"/>
+                        <outlet property="countries_Discribe" destination="7bl-ag-h6g" id="AaN-47-ZnT"/>
                         <outlet property="countries_Flags" destination="euw-Ya-fXk" id="teK-pf-AVI"/>
                         <outlet property="countries_Indepedent" destination="cAD-3H-Q3K" id="g2z-uZ-ya4"/>
-                        <outlet property="countries_Lang" destination="cTp-KH-YYD" id="rs8-yq-T4s"/>
                         <outlet property="countries_Name" destination="bmf-dg-uWu" id="Tcr-cP-4so"/>
                         <outlet property="countries_Population" destination="YCK-ce-VHY" id="0Nf-RU-FCR"/>
-                        <outlet property="countries_Timezone" destination="WKr-eL-yL6" id="cUN-2M-9A2"/>
                         <outlet property="countries_rigion" destination="Sht-fK-HTb" id="gaB-8t-DsF"/>
                     </connections>
                 </viewController>
