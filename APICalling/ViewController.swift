@@ -379,31 +379,9 @@ class ViewController: UIViewController {
         cv_Outlet.layer.cornerRadius = 10
     }
     
-    //    func getData() {
-    //        let url = URL(string: "https://restcountries.com/v3.1/all")
-    //        var ur = URLRequest(url: url!)
-    //        ur.httpMethod = "GET"
-    //
-    //        URLSession.shared.dataTask(with: ur) { data, response, error in
-    //            do {
-    //                if data != nil {
-    //                    self.array = try JSONDecoder().decode([WelcomeElement].self, from: data!)
-    //
-    //                    DispatchQueue.main.async {
-    //                        self.cv_Outlet.reloadData()
-    //                    }
-    //                }
-    //            }
-    //            catch {
-    //                print(error.localizedDescription)
-    //            }
-    //        }.resume()
-    //    }
-    
     func getData() {
-        
-        AF.request("https://restcountries.com/v3.1/all",method: .get).response {[self] respo in
-            switch respo.result{
+        AF.request("https://restcountries.com/v3.1/all",method: .get).response { [self] respo in
+            switch respo.result {
             case.success(let data):
                 do {
                     if data != nil {
@@ -420,7 +398,6 @@ class ViewController: UIViewController {
                 print(error)
             }
         }
-        
     }
     
     func urlToImage(url: String)->UIImage?{
